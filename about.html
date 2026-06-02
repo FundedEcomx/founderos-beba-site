@@ -16,44 +16,33 @@
 <body>
 
     <nav>
-      <a href='index.html' class='logo'>BEBA</a>
+      <a href='index.html'>BEBA</a>
       <div class='nav-links'>
-        <a href='services.html'>SaaS Services</a>
+        <a href='services.html'>Services</a>
         <a href='pricing.html'>Pricing</a>
         <a href='contact.html'>Contact</a>
         <a href='about.html'>About</a>
       </div>
-      <a href='login.html' class='nav-cta'>Unlock Dashboard</a>
+      <button class='nav-cta'>Start My SaaS Journey</button>
     </nav>
-    <section>
+    <section id='about'>
       <h2>About Us</h2>
-      <p>Hi, I'm [Founder's Name], founder of BEBA. I help enterprises with SaaS adoption and implementation.</p>
-      <p>With over 10 years of experience in SaaS, I've seen firsthand the challenges enterprises face. That's why I created BEBA - to provide expert guidance and support.</p>
-    </section>
-    <section>
-      <h2>Our Values</h2>
-      <div class='service-cards'>
-        <div class='service-card'>
-          <h3>👉 Customer Focus</h3>
-          <p>We put our customers at the forefront of everything we do.</p>
-        </div>
-        <div class='service-card'>
-          <h3>👉 Expertise</h3>
-          <p>We stay up-to-date with the latest SaaS trends and best practices.</p>
-        </div>
-        <div class='service-card'>
-          <h3>👉 Transparency</h3>
-          <p>We're open and honest in all our interactions.</p>
-        </div>
-      </div>
+      <img src='img/photo-2.jpg' alt='founder' style='width:100%;max-height:200px;object-fit:cover;border-radius:16px;margin-top:32px;'>
+      <p>I'm the founder of BEBA, with a passion for helping large enterprises streamline their operations through custom SaaS solutions.</p>
+      <p>With over 10 years of experience in the industry, I've seen firsthand the impact that well-designed software can have on an organisation's efficiency and bottom line.</p>
+      <p>That's why I created BEBA - to bring expertise and innovation to the table, and help enterprises like yours succeed in the digital age.</p>
     </section>
     <section id='cta'>
-      <h2>Unlock Your Enterprise's Full Potential with BEBA</h2>
-      <button class='btn'>Get Customised SaaS Support</button>
-      <p class='risk-reversal'>100% Satisfaction Guarantee. Cancel anytime.</p>
+      <h2>Unlock Your Enterprise's Full Potential</h2>
+      <button class='btn'>Start My SaaS Journey</button>
+      <p class='risk-reversal'>30-day money-back guarantee - no risk, just results!</p>
     </section>
-    <footer>BEBA &copy; 2026</footer>
-    <div class='sticky-mobile-cta'><button class='btn'>Get Customised SaaS Support</button></div>
+    <footer>
+      <p>BEBA &copy; 2026</p>
+    </footer>
+    <div class='sticky-mobile-cta'>
+      <button class='btn'>Start My SaaS Journey</button>
+    </div>
   
 <script>document.querySelectorAll('.faq-item').forEach(function(item){item.addEventListener('click',function(){var answer=this.querySelector('.faq-answer');var chevron=this.querySelector('.faq-chevron');var isOpen=this.classList.contains('open');document.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open');i.querySelector('.faq-answer').style.maxHeight='0';i.querySelector('.faq-chevron').textContent='+';});if(!isOpen){this.classList.add('open');answer.style.maxHeight=answer.scrollHeight+'px';chevron.textContent='×';}});});window.addEventListener('scroll',function(){document.querySelector('nav').classList.toggle('scrolled',window.scrollY>50);});</script>
 </body>
